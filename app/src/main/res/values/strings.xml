@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">爱运动</string>
+    <string name="register">注册</string>
+    <string name="name">昵称</string>
+    <string name="next">下一步</string>
+    <string name="complete">完成</string>
+    <string name="cancel">取消</string>
+    <string name="camera">相机</string>
+    <string name="album">本地相册</string>
+    <string name="resetpsw">重置密码</string>
+    <string name="getcode">获取验证码</string>
+    <string name="vecode">验证码</string>
+    <string name="newpsw">输入新密码</string>
+    <string name="input_phonenum">输入手机号</string>
+    <string name="phonenum">手机号/邮箱</string>
+    <string name="psw">密码</string>
+    <string name="inputpsw">输入密码</string>
+    <string name="inputpsw_re">确认密码</string>
+    <string name="phonecantnull">手机号不能为空</string>
+    <string name="timer">%1$s秒后重新发送</string>
+    <string name="timer2">%1$s秒</string>
+    <string name="login">登录</string>
+    <string name="strategy">攻略</string>
+    <string name="find">发现</string>
+    <string name="message">消息</string>
+    <string name="mine">我的</string>
+    <string name="mistake">账号或者密码错误</string>
+    <string name="done">确认</string>
+    <string name="clean_cache_confirm">是否清除缓存?</string>
+    <string name="clean_cache_success">清除成功</string>
+    <string name="app_info">LoveTravel,a interesting APP</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_failed">登录失败</string>
+    <string name="outlogin_success">退出登录成功</string>
+    <string name="register_success">注册成功</string>
+    <string name="register_failed">注册失败</string>
+    <string name="revise_success">修改成功</string>
+    <string name="revise_failed">修改失败</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

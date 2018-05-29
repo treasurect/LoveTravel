@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="gray_8c">#8c8c8c</color>
+    <color name="blue_6298ff">#6298ff</color>
+    <color name="white_d5">#d5d5d5</color>
+    <color name="white">#ffffff</color>
+    <color name="white_f2">#f2f2f2</color>
+    <color name="yellow_ffe301">#ffe301</color>
+    <color name="yellow_ffc614">#ffc614</color>
+    <color name="gray_6e">#6E6E6E</color>
+    <color name="blue_0057ff">#0057ff</color>
+    <color name="blue_87b0ff">#87b0ff</color>
+    <color name="gray_7c">#7c7c7c</color>
+    <color name="white_de">#dedede</color>
+    <color name="gray_5d">#5d5d5d</color>
+    <color name="viewcolor">#050424</color>
+    <color name="black_2d">#2d2d2d</color>
+    <color name="black">#000000</color>
+    <color name="blue_32cbd1">#32cbd1</color>
+    <color name="white_f8">#f8f8f8</color>
+    <color name="item_pressed">#e7e7e7</color>
+    <color name="red_ff3838">#ff3838</color>
+
+    <!-- QRCode scanner color begin -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#B0000000</color>
+    <color name="viewfinder_frame">#90FFFFFF</color>
+    <color name="result_point_color">#C0FFFF00</color>
+    <color name="laser_color">#0F0</color>
+    <color name="corner_color">#00FF00</color>
+
+    <color name="yellow">#FFFF00</color>
+    <color name="red">#FF0000</color>
+    <color name="grey">#808080</color>
+    <!-- QRCode scanner color end -->
+
+    <color name="topbar_leftright_text">#4c4c4c</color><!--顶部Bar的左右字体的颜色-->
+    <color name="topbar_leftright_text_highlight">#f68008</color><!--顶部Bar的左右字体的高亮颜色-->
+</resources>

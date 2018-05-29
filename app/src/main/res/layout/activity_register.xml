@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/pic_bg_register" />
+
+    <include layout="@layout/layout_toolbar_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/phonenum"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/input_phonenum"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textColorHint="@color/white_d5"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="240dp"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/white_d5" />
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/passwd"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/inputpsw"
+                android:inputType="textPassword"
+                android:maxLength="32"
+                android:singleLine="true"
+                android:textColorHint="@color/white_d5"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="240dp"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/white_d5" />
+
+        <RelativeLayout
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp">
+
+            <EditText
+                android:id="@+id/vecode"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:hint="@string/vecode"
+                android:inputType="number"
+                android:textColor="@color/gray_8c"
+                android:textColorHint="@color/gray_8c"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/getvecode"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_stroke_32cbd105_r_25"
+                android:gravity="center"
+                android:text="@string/getcode"
+                android:textColor="@color/blue_0057ff"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="240dp"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/white_d5" />
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="41dp"
+            android:background="@drawable/shape_solid_8c_r_3"
+            android:gravity="center"
+            android:text="@string/register"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/root"
+    android:layout_width="match_parent"
+    android:layout_height="2400dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/blue_32cbd1"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editor"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="top|left"
+        android:padding="15dp"
+        android:background="@drawable/shape_solid_ff_r_3"/>
+</LinearLayout>

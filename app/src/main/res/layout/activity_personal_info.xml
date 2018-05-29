@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar_view"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#f8f8f8"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="基本资料"
+                    android:textColor="@color/blue_6298ff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/headlayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/selected_bepress">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="头像"
+                    android:textColor="@color/black_2d"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/head"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/ic_arrow_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white_f2" />
+
+            <RelativeLayout
+                android:id="@+id/namelayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/selected_bepress">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="昵称"
+                    android:textColor="@color/black_2d"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:textColor="@color/black_2d"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="12dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@mipmap/ic_arrow_right" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white_f2" />
+
+            <RelativeLayout
+                android:id="@+id/sex_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/selected_bepress">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="性别"
+                    android:textColor="@color/black_2d"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未设置"
+                        android:textColor="@color/white_d5"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="12dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@mipmap/ic_arrow_right" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white_f2" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white_f2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#f8f8f8"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="联系方式"
+                    android:textColor="@color/blue_6298ff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/qqlayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/selected_bepress">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="QQ"
+                    android:textColor="@color/black_2d"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/qq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white_d5"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="12dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@mipmap/ic_arrow_right" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white_f2" />
+
+            <RelativeLayout
+                android:id="@+id/emaillayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/selected_bepress">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="邮箱"
+                    android:textColor="@color/black_2d"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未填写"
+                        android:textColor="@color/white_d5"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="12dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@mipmap/ic_arrow_right" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

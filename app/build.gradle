@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.mob.sdk'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+    defaultConfig {
+        applicationId "com.treasure.lovetravel"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    compile 'com.jakewharton:butterknife:8.6.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support:support-v4:26.0.0-alpha1'
+    compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    compile 'com.yanzhenjie:permission:1.1.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'cn.bmob.android:bmob-sdk:3.5.5'
+    compile 'cn.bmob.android:http-legacy:1.0'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+}
+// 在MobSDK的扩展中注册SMSSDK的相关信息
+MobSDK {
+    appKey "260bd4b583654"
+    appSecret "9f1ca56d371720c0b3ac5f699bcf7041"
+    SMSSDK {}
+}

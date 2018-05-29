@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="49dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/white_d5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/strategy_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/strategy_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/selected_strategy" />
+
+                <TextView
+                    android:id="@+id/strategy_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/strategy_img"
+                    android:layout_centerHorizontal="true"
+                    android:padding="2dp"
+                    android:text="@string/strategy"
+                    android:textColor="@drawable/selected_main_txt_color"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/find_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/find_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/selected_find" />
+
+                <TextView
+                    android:id="@+id/find_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/find_img"
+                    android:layout_centerHorizontal="true"
+                    android:padding="2dp"
+                    android:text="@string/find"
+                    android:textColor="@drawable/selected_main_txt_color"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                android:id="@+id/message_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/message_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/selected_message" />
+
+                <TextView
+                    android:id="@+id/message_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/message_img"
+                    android:layout_centerHorizontal="true"
+                    android:padding="2dp"
+                    android:text="@string/message"
+                    android:textColor="@drawable/selected_main_txt_color"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mine_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/mine_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/selected_mine" />
+
+                <TextView
+                    android:id="@+id/mine_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mine_img"
+                    android:layout_centerHorizontal="true"
+                    android:padding="2dp"
+                    android:text="@string/mine"
+                    android:textColor="@drawable/selected_main_txt_color"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/add_layout"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_solid_32cbd1_circle"
+            android:padding="15dp"
+            android:src="@mipmap/ic_add" />
+    </RelativeLayout>
+</RelativeLayout>
